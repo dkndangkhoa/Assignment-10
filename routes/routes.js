@@ -1,7 +1,7 @@
 const express = require('express');
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
-const db = require('../database'); // Ensure this path is correct
+const db = require('../blog.db'); // Ensure this path is correct
 const router = express.Router();
 // Blog Routes
 // Route to display all blog posts
