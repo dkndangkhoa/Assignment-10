@@ -1,7 +1,7 @@
 const LocalStrategy = require('passport-local').Strategy;
 const bcrypt = require('bcryptjs');
 // Your database setup
-const db = require('./blog.db');
+const db = require('./database');
 module.exports = function(passport) {
 passport.use(new LocalStrategy(async (username, password, done) => {
 // Match user
